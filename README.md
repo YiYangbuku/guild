@@ -12,7 +12,7 @@ To create a new api from nothing by spring boot. And further use swagger to gene
 compile('io.springfox:springfox-swagger2:2.7.0')
 compile('io.springfox:springfox-swagger-ui:2.7.0')
 ```
-Try /v2/api-docs and /swagger-ui.html endpoints
+2. Try /v2/api-docs and /swagger-ui.html endpoints
 
 ## Practice 3:
 1. Create RestTemplate in your project.
