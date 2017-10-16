@@ -7,7 +7,7 @@ To create a new api from nothing by spring boot. And further use swagger to gene
 3. Create a simple restful api to return some string (such as /api/order). 
 
 ## Practice 2:
-1. add swagger dependency
+1. Add swagger dependency
 ```
 compile('io.springfox:springfox-swagger2:2.7.0')
 compile('io.springfox:springfox-swagger-ui:2.7.0')
