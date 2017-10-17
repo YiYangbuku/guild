@@ -26,7 +26,7 @@ public class OrderController extends BaseController {
         return "Order id: XXX";
     }
 
-    @RequestMapping(value = "/order", method = RequestMethod.GET, headers = "apt-version=2")
+    @RequestMapping(value = "/order", method = RequestMethod.GET, headers = "api-version=2")
     public String getOrderV2() {
         return "V2: order id: XXX" + customerService.getCustomer() + ", " + logisticsService.getLogistics();
     }
