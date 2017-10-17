@@ -20,8 +20,14 @@ public class OrderController extends BaseController {
     @Autowired
     private LogisticsService logisticsService;
 
+
     @RequestMapping(value = "/order", method = RequestMethod.GET)
     public String getOrder() {
-        return "Order id: XXX" + customerService.getCustomer() + ", " + logisticsService.getLogistics();
+        return "Order id: XXX";
+    }
+
+    @RequestMapping(value = "/order", method = RequestMethod.GET, headers = "apt-version=2")
+    public String getOrderV2() {
+        return "V2: order id: XXX" + customerService.getCustomer() + ", " + logisticsService.getLogistics();
     }
 }
